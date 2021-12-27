@@ -35,12 +35,14 @@ In this example, there are 5 sums that are larger than the previous sum.
 
 Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
 
+Input: Day_1_Sonar_Sweep.txt
+
 Answer: 1518
 
 """
 
 ## Code starts here
-with open('Day_1_Sonar_Sweep_Part_1.txt', 'r') as f:
+with open('Day_1_Sonar_Sweep.txt', 'r') as f:
     file = f.readlines()
 
 file = [int(lines.strip()) for lines in file]

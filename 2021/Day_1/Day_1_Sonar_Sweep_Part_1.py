@@ -45,14 +45,14 @@ In this example, there are 7 measurements that are larger than the previous meas
 
 How many measurements are larger than the previous measurement?
 
-To begin, get your puzzle input (Day_1_Sonar_Sweep_Part_1.txt).
+To begin, get your puzzle input (Day_1_Sonar_Sweep.txt).
 
 Answer: 1482
 
 """
 
 ## Code Starts here
-with open('Day_1_Sonar_Sweep_Part_1.txt', 'r') as f:
+with open('Day_1_Sonar_Sweep.txt', 'r') as f:
     file = f.readlines()
 
 file = [int(x.strip()) for x in file]
