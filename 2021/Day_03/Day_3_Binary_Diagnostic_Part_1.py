@@ -36,7 +36,7 @@ Use the binary numbers in your diagnostic report to calculate the gamma rate and
 
 To begin, get your puzzle input (Day_3_Binary_Diagnostic.txt).
 
-Answer:
+Answer: 2648450
 
 
 """
@@ -44,3 +44,18 @@ Answer:
 with open('Day_3_Binary_Diagnostic.txt', 'r') as f:
     file = f.readlines()
 
+file = [lines.strip() for lines in file]
+
+counter_list = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]
+
+for line in file:
+    for index, bit in enumerate(line):
+        counter_list[index][int(bit)] += 1
+
+
+gamma_rate   = int(''.join([str(bit_position.index(max(bit_position))) for bit_position in counter_list]), 2)
+epsilon_rate = int(''.join([str(bit_position.index(min(bit_position))) for bit_position in counter_list]), 2)
+
+print(gamma_rate)
+print(epsilon_rate)
+print(gamma_rate*epsilon_rate)
