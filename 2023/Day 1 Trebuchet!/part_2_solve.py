@@ -11,7 +11,7 @@ import regex as re
 # In this example, the calibration values are 29, 83, 13, 24, 42, 14, and 76. Adding these together produces 281.
 
 calibration_document = ''
-with open('input_text.txt', 'r') as file:
+with open('2023\Day 1 Trebuchet!\input_text.txt', 'r') as file:
     calibration_document = file.readlines()
 
 

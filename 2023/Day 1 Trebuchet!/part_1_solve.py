@@ -8,7 +8,7 @@ print()
 # In this example, the calibration values of these four lines are 12, 38, 15, and 77. Adding these together produces 142.
 
 calibration_document = ''
-with open('input_text.txt', 'r') as file:
+with open('2023\Day 1 Trebuchet!\input_text.txt', 'r') as file:
     calibration_document = file.readlines()
 
 part_1_calibration_document = [''.join(re.findall(r'[0-9]', x.replace('\n',''))) for x in calibration_document]
